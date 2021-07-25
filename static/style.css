@@ -9,7 +9,7 @@ body {
     font-size: 1.6vw;
     line-height: 1.42;
     color: #303030;
-    font-size: 200%;
+    font-size: 140%;
 }
 
 header {
@@ -79,4 +79,28 @@ header h1 {
 
 a:hover {
     color: #000000;
+}
+
+/* Layout */
+
+.left {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Audio player */
+
+.audio-icon {
+    width: 10em;
+}
+
+svg:hover {
+  fill: #000000;
+}
+
+svg {
+  fill: #303030;
 }
