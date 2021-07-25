@@ -1,3 +1,3 @@
 # Highlander
 
-Static landing page generator.
+Landing page for mxs.sbrk.org.
