@@ -104,3 +104,22 @@ svg:hover {
 svg {
   fill: #303030;
 }
+
+li {
+    list-style: none;
+    text-align: right;
+}
+
+ul a {
+    font-weight: 500;
+}
+
+/* Max-width */
+
+@media (max-width: 768px)
+{
+    body
+    {
+        font-size: 3vw;
+    }
+}
