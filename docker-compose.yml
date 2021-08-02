@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  mxs_frontend:
+    environment:
+      - VIRTUALHOST=landing.mxs.sbrk.org
+    build: ./
+    ports:
+    - "10004:80"
