@@ -3,7 +3,7 @@ services:
   mxs_frontend:
     environment:
       - VIRTUALHOST=landing.mxs.sbrk.org
-    build: ./
+    image: registry.maethstro.com/highlander:prod
     ports:
     - "10004:80"
     restart: unless-stopped
