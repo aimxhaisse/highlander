@@ -26,5 +26,5 @@ push: build
 	@docker tag $(REGISTRY)/${REGISTRY_IMAGE} $(REGISTRY)/${REGISTRY_IMAGE}:prod
 	@docker login --username $(REGISTRY_LOGIN) --password $(REGISTRY_PASSWORD) $(REGISTRY)
 	@docker image push $(REGISTRY)/${REGISTRY_IMAGE}:prod
-	@scp docker-compose.yaml maethstro.com:services/mxs.sbrk.org/docker-compose.yaml
-	@ssh maethstro.com "docker login --username $(REGISTRY_LOGIN) --password $(REGISTRY_PASSWORD) $(REGISTRY) && cd services/mxs.sbrk.org && docker-compose pull && docker-compose up -d"
+	@scp docker-compose.yaml maethstro.com:services/landing.mxs.sbrk.org/docker-compose.yaml
+	@ssh maethstro.com "docker login --username $(REGISTRY_LOGIN) --password $(REGISTRY_PASSWORD) $(REGISTRY) && cd services/landing.mxs.sbrk.org && docker-compose pull && docker-compose up -d"
